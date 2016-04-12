@@ -1,0 +1,6 @@
+sitemap default label="Main Menu"
+{
+        Frame label="Emargement : " {
+                Text item=identifiant2
+        }
+}

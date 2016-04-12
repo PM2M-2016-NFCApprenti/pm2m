@@ -1,0 +1,7 @@
+Group All
+Group emargement (All)
+
+Group emargement2 "Emargement" <video> (emargement)
+
+String identifiant "Identifiant : [%s]" <identifiant> (emargement2) {mqtt="<[mosquitto:NomFileAttente:state:default]"}
+String identifiant2 "Identifiant : [%s]" <identifiant> (emargement2) {}

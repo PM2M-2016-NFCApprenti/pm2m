@@ -1,0 +1,12 @@
+rule MappingIdentifiant
+    when
+        Item identifiant received update
+    then
+        if(identifiant.state == "045FC8990B0280") {
+	    var String test = String::format( "%s", "max")
+            postUpdate(identifiant2, test)
+	}else{
+	    var String test = String::format( "%s", "Babasssssss")
+            postUpdate(identifiant2, test)
+	}
+    end
