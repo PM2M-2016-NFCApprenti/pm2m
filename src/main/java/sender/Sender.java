@@ -16,16 +16,13 @@ public class Sender {
         try {
         	client = new MqttClient("tcp://212.72.74.21:1883", "Sending1");
         	client.connect();
-           	//MqttMessage message = new MqttMessage();
-            //message.setPayload("A single message from my computer fff".getBytes());
-            //client.publish("NomFileAttente", message);
+           	MqttMessage message = new MqttMessage();
+            	message.setPayload("A single message from my computer fff".getBytes());
+            	client.publish("NomFileAttente", message);
         	
-        	MqttMessage message = new MqttMessage();
-            message.setPayload("hello Mon gars !\n".getBytes());
-        	client.publish("NomFileAttente", message);
         	
-    		//SimpleTikitagClient tiki = new SimpleTikitagClient();
-    		//tiki.start(client);
+    		SimpleTikitagClient tiki = new SimpleTikitagClient();
+    		tiki.start(client);
     		
         	
             
